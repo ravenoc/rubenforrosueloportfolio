@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruben Forrosuelo - Virtual Assistant</title>
+    <style>
+        
+        body {
+            background: linear-gradient(0deg, #45e89c 0%, #ffffff 100%);
+            margin: 20;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60vh;
+            flex-direction: column;
+        }
+
+        .header {
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 10px;
+            margin-top: 1px;
+            
+        }
+
+        .typing-text {
+            font-size: 24px;
+            line-height: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .hire-button {
+            font-size: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #45e89c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            animation: scale 2s infinite;
+            margin-top: 20px;
+        }
+
+        hr {
+            width: 100%;
+            margin: 40px 0;
+        }
+
+
+        @keyframes scale {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Hi, I'm Ruben Forrosuelo, and I'm a</div>
+        <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Typing Effect</title>
+            </head>
+            <body>
+                <h1 id="typing-text"></h1>
+            
+                <script>
+                 
+let typingText = document.getElementById('typing-text');
+let text = 'Virtual Assitant';
+let index = 0;
+let speed = 85;
+
+function type() {
+    if (index < text.length) {
+        typingText.textContent += text.charAt(index);
+        index++;
+        setTimeout(type, speed);
+    }
+}
+
+type();
+                </script>
+            </body>
+            </html>
+        <p style="font-size:20px; line-height: 25px; margin-bottom: 30px; text-align:center; margin-top: 20px;">Catalyzing visions into reality through real estate, payroll and <br>virtual assistant expertise, I specialize in transforming ideas into <br>results while optimizing operations.</p>
+        <button class="hire-button">HIRE ME</button>
+    </div>
+
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Your Combined Example</title>
+            <style>
+                .parent {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: 1fr;
+                    grid-column-gap: 0px;
+                    grid-row-gap: 0px;
+                }
+                
+                /* Add your other CSS styles here */
+        
+                .about-me {
+                    margin-top: 30px;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="parent">
+                <!-- Left column -->
+                <div>
+                    <style>
+                        /* Define the initial size, margin, and shadow */
+                        .hover-image {
+                            width: 270px;
+                            height: 350px;
+                            margin-left: 20px; 
+                            margin-left: 40px; 
+                            margin-bottom: 20px;
+                            margin-top: 20px;/* Add a margin to the left side */
+                            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+                            /* Add shadow */
+                            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Adjust the shadow properties as needed */
+                        }
+                    
+                        /* Apply a scale transformation and adjust the shadow on hover */
+                        .hover-image:hover {
+                            transform: scale(1.05); /* You can adjust the scaling factor */
+                            box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3); /* Adjust the shadow properties on hover */
+                        }
+                    </style>
+                    
+                    <!-- HTML content with the image -->
+                    <img src="retouch_2023040817213220.jpg" alt="Your Image" class="hover-image">
+                     
+                </div>
+                <!-- Right column -->
+                <div class="about-me">
+                    <h2 style="margin-right: 10px;">About ME</h2>
+                    <p style="margin-left: 50px; 
+                    margin-right: 90px; 
+                    margin-bottom: 30px;
+                    margin-top: 20px;">I'm an experienced Virtual Assistant with a strong focus on optimizing file management processes, streamlining storage procedures, and safeguarding sensitive information. <br> <br>I diligently validate documents, conduct thorough research to address challenges, and expertly implement practical and efficient solutions.  <br> <br>I am committed to enhancing organizational efficiency and ensuring the confidentiality of critical data.</p>
+                </div>
+            </div>
+        </body>
+        </html>
+    
+</body>
+</html>
